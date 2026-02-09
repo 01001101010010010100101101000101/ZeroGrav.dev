@@ -1,0 +1,24 @@
+<svg width="720" height="240" viewBox="0 0 720 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="zg-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7B61FF" />
+      <stop offset="1" stop-color="#53E0FF" />
+    </linearGradient>
+    <linearGradient id="zg-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7B61FF" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#53E0FF" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="240" rx="36" fill="#0A0B1A" />
+  <rect x="24" y="24" width="672" height="192" rx="28" fill="#0F1126" stroke="url(#zg-glow)" />
+  <circle cx="120" cy="120" r="58" fill="url(#zg-gradient)" />
+  <circle cx="120" cy="120" r="34" fill="#0A0B1A" />
+  <path d="M98 120C98 108.4 107.4 99 119 99H145C151.6 99 157 104.4 157 111V129C157 135.6 151.6 141 145 141H119C107.4 141 98 131.6 98 120Z" fill="#0A0B1A" stroke="#53E0FF" stroke-width="3" />
+  <path d="M109 120H145" stroke="#7B61FF" stroke-width="3" stroke-linecap="round" />
+  <text x="210" y="125" fill="#F6F5FF" font-size="48" font-family="Space Grotesk, Arial, sans-serif" font-weight="700">
+    ZeroGrav Prompt Vault
+  </text>
+  <text x="212" y="165" fill="#B8B6D9" font-size="22" font-family="Space Grotesk, Arial, sans-serif">
+    Immersive prompt library for vibe coders
+  </text>
+</svg>
