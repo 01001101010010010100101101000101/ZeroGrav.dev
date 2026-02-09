@@ -28,6 +28,3 @@ A single-page prompt vault that hosts 100 beginner-friendly prompts for vibe cod
 python -m http.server 4173
 ```
 Then open `http://127.0.0.1:4173/`.
-
-## Notes
-If you want additional prompt categories, new UI themes, or a multi-page version, share the requirements and I can extend the vault.
