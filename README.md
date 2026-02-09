@@ -2,7 +2,7 @@
 
 A single-page prompt vault that hosts 100 beginner-friendly prompts for vibe coders. It is designed for fast scanning, quick copying, and a clear funnel to VeteranClaimBuilder.com.
 
-![ZeroGrav Prompt Vault logo](assets/logo.svg)
+![ZeroGrav Prompt Vault preview](assets/preview.svg)
 
 ## Why this exists
 - **SEO + GEO ready**: Metadata, JSON-LD, and clear headings help search engines and generative engines understand the page.
@@ -22,7 +22,7 @@ A single-page prompt vault that hosts 100 beginner-friendly prompts for vibe cod
 ├── styles.css      # Visual system, layout, and animations
 ├── script.js       # Prompt library + filtering, modal, copy logic
 └── assets/
-    └── logo.svg    # README logo graphic
+    └── preview.svg # README graphic
 ```
 
 ## Local development
