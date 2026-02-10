@@ -10,11 +10,11 @@ A high-performance, single-page prompt vault featuring 250 execution-grade promp
 
 ## 🚀 Why This Exists
 
-ZeroGrav is designed to bridge the gap between generic chat responses and production-ready output. Every prompt is engineered to be **tactical**, **repeatable**, and **context-aware**.
+Most prompts are vague, one-shot afterthoughts — and the output shows it. ZeroGrav is a curated vault of **250 production-grade prompts** built for people who ship with AI, not just chat with it.
 
-- **High-Signal Prompting**: Structured payloads that produce implementation-ready code and designs.
-- **Efficient Discovery**: Instant search, category filtering, and one-click share controls.
-- **Zero Friction**: Modal-based detail views minimize navigation and keep you in the flow.
+- **Copy. Paste. Ship.** Every prompt is a complete, structured payload — not a starting point you have to fix. Paste it, get implementation-ready output on the first try.
+- **Find what you need in seconds.** Instant search, category filter pills, and one-click copy — no docs to read, no setup, no login.
+- **Built for the way vibe coders actually work.** Modal-based detail views keep you in flow. Open a card, grab the prompt, close it, keep building.
 
 ## ✨ Key Features
 
