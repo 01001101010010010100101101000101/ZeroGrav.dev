@@ -1,27 +1,26 @@
 # ZeroGrav Prompt Vault
 
-A single-page prompt vault featuring 100 detailed, execution-grade prompts for planning, design, UX, debugging, refactoring, performance, accessibility, content, marketing, and deployment.
+A single-page prompt vault that hosts 100 beginner-friendly prompts for vibe coders. It is designed for fast scanning, quick copying, and a clear funnel to VeteranClaimBuilder.com.
 
-![ZeroGrav.dev logo](assets/zerograv-logo.svg)
+![ZeroGrav Prompt Vault logo](assets/logo.svg)
 
 ## Why this exists
-- **High-signal prompting**: Every prompt is structured to produce tactical, implementation-ready responses instead of generic advice.
-- **Fast exploration**: Search, category filters, modal detail view, and per-card share controls keep discovery efficient.
+- **SEO + GEO ready**: Metadata, JSON-LD, and clear headings help search engines and generative engines understand the page.
+- **Fast exploration**: Search, category filters, and a modal that shows the full prompt with one click.
 
 ## Key features
-- **100 engineered prompts** across 10 categories.
-- **Copy + share workflows** for each prompt and for the full vault.
-- **Responsive visual design** with a branded header logo and SVG favicon.
+- **100 prompts** across 10 categories (Planning, UI Design, UX Flow, Debugging, Refactoring, Performance, Accessibility, Content, Marketing, Deployment).
+- **Instant copy** buttons for single prompts or the full list.
+- **Modern UI** with subtle motion, floating orbs, and hover micro-interactions.
 
 ## Project structure
 ```
 .
-├── index.html      # Page structure, SEO metadata, modal shell
-├── styles.css      # Visual system, layout, card + button styling
-├── script.js       # Prompt dataset, filtering, modal, copy/share behavior
+├── index.html      # Page structure, SEO meta tags, JSON-LD
+├── styles.css      # Visual system, layout, and animations
+├── script.js       # Prompt library + filtering, modal, copy logic
 └── assets/
-    ├── zerograv-logo.svg  # Primary brand logo used in app + README + favicon
-    └── zerograv-mark.svg  # Brand mark asset
+    └── logo.svg    # README logo graphic
 ```
 
 ## Local development

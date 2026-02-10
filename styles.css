@@ -73,16 +73,8 @@ body {
 }
 
 .logo {
-  display: inline-flex;
-  align-items: center;
-  max-width: min(38vw, 320px);
-}
-
-.logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .nav-actions {
@@ -227,7 +219,7 @@ select {
   cursor: pointer;
   display: grid;
   gap: 12px;
-  min-height: 220px;
+  min-height: 200px;
 }
 
 .card:hover {
@@ -256,19 +248,6 @@ select {
   border-radius: 999px;
   font-size: 0.75rem;
   width: fit-content;
-}
-
-.card__actions {
-  margin-top: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card__share {
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 0.82rem;
-  border: 1px solid rgba(123, 97, 255, 0.35);
 }
 
 .cta {
