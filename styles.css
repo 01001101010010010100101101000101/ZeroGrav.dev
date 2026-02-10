@@ -73,8 +73,16 @@ body {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .nav-actions {
@@ -219,7 +227,7 @@ select {
   cursor: pointer;
   display: grid;
   gap: 12px;
-  min-height: 200px;
+  min-height: 220px;
 }
 
 .card:hover {
@@ -248,6 +256,19 @@ select {
   border-radius: 999px;
   font-size: 0.75rem;
   width: fit-content;
+}
+
+.card__actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__share {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  border: 1px solid rgba(123, 97, 255, 0.35);
 }
 
 .cta {
@@ -296,8 +317,10 @@ select {
   background: #0b0c16;
   max-width: 720px;
   width: min(90vw, 720px);
+  max-height: min(82vh, 760px);
+  overflow-y: auto;
   border-radius: 20px;
-  padding: 28px;
+  padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
@@ -344,6 +367,8 @@ pre {
   border-radius: 12px;
   font-size: 0.95rem;
   color: var(--text);
+  max-height: 32vh;
+  overflow-y: auto;
 }
 
 @media (max-width: 720px) {
