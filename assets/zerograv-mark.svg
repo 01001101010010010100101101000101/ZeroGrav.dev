@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ZeroGrav mark">
+  <defs>
+    <linearGradient id="ring-grad" x1="96" y1="80" x2="402" y2="432" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2FD5FF" />
+      <stop offset="0.55" stop-color="#4FA6FF" />
+      <stop offset="1" stop-color="#5932C9" />
+    </linearGradient>
+    <radialGradient id="core-grad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 256) rotate(90) scale(188)">
+      <stop offset="0" stop-color="#102266" />
+      <stop offset="1" stop-color="#030924" />
+    </radialGradient>
+    <linearGradient id="swoosh-grad" x1="26" y1="312" x2="494" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34CCFF" />
+      <stop offset="0.54" stop-color="#4D83E8" />
+      <stop offset="1" stop-color="#AA22AE" />
+    </linearGradient>
+    <linearGradient id="s-grad" x1="190" y1="190" x2="325" y2="305" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FC8FF" />
+      <stop offset="1" stop-color="#5A63D8" />
+    </linearGradient>
+  </defs>
+
+  <path d="M257 62C357 62 439 142 451 239L401 234C388 161 330 112 257 112C190 112 134 153 117 218L67 212C89 124 166 62 257 62Z" fill="url(#ring-grad)"/>
+  <path d="M451 239C451 340 368 422 267 422C179 422 105 359 86 277L136 272C155 330 207 372 267 372C340 372 399 322 401 249L451 239Z" fill="url(#ring-grad)"/>
+
+  <circle cx="257" cy="256" r="133" fill="url(#core-grad)"/>
+
+  <path d="M34 314C76 248 139 224 188 233C236 241 292 228 353 188C424 142 485 131 511 151C525 162 523 184 506 210C476 257 406 257 343 287C276 318 215 367 147 369C88 371 31 355 26 338C24 331 26 323 34 314Z" fill="url(#swoosh-grad)"/>
+
+  <path d="M167 206L336 121L335 175L192 248L167 206Z" fill="url(#s-grad)"/>
+  <path d="M178 292L347 207L347 259L202 333L178 292Z" fill="url(#s-grad)"/>
+</svg>
