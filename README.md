@@ -1,6 +1,6 @@
 # ZeroGrav Prompt Vault
 
-[![GitHub license](https://img.shields.io/github/license/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/issues)
 
@@ -21,7 +21,6 @@ ZeroGrav is designed to bridge the gap between generic chat responses and produc
 - **100+ Engineered Prompts**: Covering 10 critical categories including UX, Performance, and Accessibility.
 - **One-Click Workflows**: Copy and share prompts individually or share the entire vault.
 - **Premium Aesthetics**: Glassmorphic UI with responsive typography and micro-animations.
-- **Veteran-First Design**: Integrated support for US Military Veterans via [VeteranClaimBuilder.com](https://veteranclaimbuilder.com).
 
 ## 📂 Project Structure
 
