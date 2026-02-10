@@ -1,49 +1,64 @@
 # ZeroGrav Prompt Vault
 
-A single-page prompt vault featuring 100 detailed, execution-grade prompts for planning, design, UX, debugging, refactoring, performance, accessibility, content, marketing, and deployment.
+[![GitHub license](https://img.shields.io/github/license/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/issues)
 
-![ZeroGrav.dev logo](assets/zerograv-logo.svg)
-**ZeroGrav.net**
+A high-performance, single-page prompt vault featuring 100+ execution-grade prompts for engineering, design, and deployment.
 
-## Why this exists
-- **High-signal prompting**: Every prompt is structured to produce tactical, implementation-ready responses instead of generic advice.
-- **Fast exploration**: Search, category filters, modal detail view, and per-card share controls keep discovery efficient.
+---
 
-## Key features
-- **100 engineered prompts** across 10 categories.
-- **Copy + share workflows** for each prompt and for the full vault.
-- **Responsive visual design** with a branded header logo and SVG favicon.
-- **Responsive visual design** with branded typography in the header and a PNG favicon set.
-- **Veteran support CTA** at the bottom of the page pointing US Military Veterans to VeteranClaimBuilder.com for AI-powered VA Disability Compensation Claim Preparation.
+## 🚀 Why This Exists
 
-## Project structure
-```
-.
-├── index.html      # Page structure, SEO metadata, modal shell
-├── styles.css      # Visual system, layout, card + button styling
-├── script.js       # Prompt dataset, filtering, modal, copy/share behavior
-└── assets/
-    ├── zerograv-logo.svg  # Primary brand logo used in app + README + favicon
-    ├── favicon-32.png     # Browser favicon (32x32)
-    ├── favicon-16.png     # Browser favicon (16x16)
-    ├── apple-touch-icon.png # iOS home-screen icon (180x180)
-    └── zerograv-mark.svg  # Brand mark asset
-```
+ZeroGrav is designed to bridge the gap between generic chat responses and production-ready output. Every prompt is engineered to be **tactical**, **repeatable**, and **context-aware**.
 
-## Local development
+- **High-Signal Prompting**: Structured payloads that produce implementation-ready code and designs.
+- **Efficient Discovery**: Instant search, category filtering, and one-click share controls.
+- **Zero Friction**: Modal-based detail views minimize navigation and keep you in the flow.
+
+## ✨ Key Features
+
+- **100+ Engineered Prompts**: Covering 10 critical categories including UX, Performance, and Accessibility.
+- **One-Click Workflows**: Copy and share prompts individually or share the entire vault.
+- **Premium Aesthetics**: Glassmorphic UI with responsive typography and micro-animations.
+- **Veteran-First Design**: Integrated support for US Military Veterans via [VeteranClaimBuilder.com](https://veteranclaimbuilder.com).
+
+## 📂 Project Structure
+
 ```bash
+.
+├── index.html      # Core page structure & SEO metadata
+├── styles.css      # Premium visual system & card layout
+├── script.js       # Dataset, filtering logic, and share behavior
+└── assets/         # Branding and iconography
+```
+
+## 🛠️ Local Development
+
+Clone the repository and spin up a local server:
+
+```bash
+git clone https://github.com/01001101010010010100101101000101/ZeroGrav.dev.git
+cd ZeroGrav.dev
 python -m http.server 4173
 ```
-Then open `http://127.0.0.1:4173/`.
 
-## Windows patch-apply workflow
-Use the following PowerShell commands to clone, apply a patch, and push:
+Navigate to `http://localhost:4173` to see it in action.
 
-```powershell
-cd $HOME\Documents\
-git clone https://github.com/01001101010010010100101101000101/ZeroGrav.dev.git
-cd .\ZeroGrav.dev\
-git checkout -b work
-git am C:\path\to\work.patch
-git push -u origin work
-```
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## ⚖️ License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+*Built for speed. Engineered for precision.*

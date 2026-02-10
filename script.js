@@ -739,7 +739,8 @@ const prompts = promptBlueprints.flatMap((group, categoryIndex) =>
 
 const grid = document.getElementById("prompt-grid");
 const searchInput = document.getElementById("search");
-const categorySelect = document.getElementById("category");
+const categoryContainer = document.getElementById("category-filters");
+let currentCategory = "All";
 const modal = document.getElementById("prompt-modal");
 const modalIcon = document.getElementById("modal-icon");
 const modalCategory = document.getElementById("modal-category");
@@ -754,9 +755,24 @@ const shareLinkButton = document.getElementById("share-link");
 
 const categories = ["All", ...new Set(prompts.map((prompt) => prompt.category))];
 
-categorySelect.innerHTML = categories
-  .map((category) => `<option value="${category}">${category}</option>`)
-  .join("");
+const renderCategories = () => {
+  categoryContainer.innerHTML = categories
+    .map(
+      (category) => `
+      <button 
+        type="button" 
+        class="filter-pill ${category === currentCategory ? "filter-pill--active" : ""}" 
+        data-category="${category}"
+        aria-pressed="${category === currentCategory}"
+      >
+        ${category}
+      </button>
+    `
+    )
+    .join("");
+};
+
+renderCategories();
 
 const copyToClipboard = async (text) => {
   try {
@@ -790,7 +806,7 @@ const sharePrompt = async (prompt) => {
 
 const renderCards = () => {
   const searchValue = searchInput.value.trim().toLowerCase();
-  const activeCategory = categorySelect.value;
+  const activeCategory = currentCategory;
 
   const filtered = prompts.filter((prompt) => {
     const matchesCategory = activeCategory === "All" || prompt.category === activeCategory;
@@ -846,7 +862,14 @@ const closeModal = () => {
 };
 
 searchInput.addEventListener("input", renderCards);
-categorySelect.addEventListener("change", renderCards);
+categoryContainer.addEventListener("click", (event) => {
+  const pill = event.target.closest(".filter-pill");
+  if (!pill) return;
+
+  currentCategory = pill.dataset.category;
+  renderCategories();
+  renderCards();
+});
 
 grid.addEventListener("click", async (event) => {
   const shareButton = event.target.closest(".card__share");
