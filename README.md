@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/01001101010010010100101101000101/ZeroGrav.dev)](https://github.com/01001101010010010100101101000101/ZeroGrav.dev/issues)
 
-A high-performance, single-page prompt vault featuring 100+ execution-grade prompts for engineering, design, and deployment.
+A high-performance, single-page prompt vault featuring 250 execution-grade prompts for engineering, design, and deployment.
 
 ---
 
@@ -18,7 +18,7 @@ ZeroGrav is designed to bridge the gap between generic chat responses and produc
 
 ## ✨ Key Features
 
-- **100+ Engineered Prompts**: Covering 10 critical categories including UX, Performance, and Accessibility.
+- **250 Engineered Prompts**: Covering 10 critical categories including UX, Performance, and Accessibility.
 - **One-Click Workflows**: Copy and share prompts individually or share the entire vault.
 - **Premium Aesthetics**: Glassmorphic UI with responsive typography and micro-animations.
 
