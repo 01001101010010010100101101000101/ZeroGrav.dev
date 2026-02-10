@@ -560,7 +560,7 @@ copyAllButton.addEventListener("click", async () => {
 shareLinkButton.addEventListener("click", async () => {
   const shareData = {
     title: "ZeroGrav Prompt Vault",
-    text: "100 expert-level prompts for strategy, design, engineering, growth, and launch.",
+    text: "250 vibe coding prompts for planning, design, debugging, performance, and more — free and open source.",
     url: window.location.href,
   };
 
@@ -585,3 +585,22 @@ if (promptFromUrl) {
 }
 
 renderCards();
+
+/* ─── Scroll-Reveal Observer ─── */
+const revealElements = document.querySelectorAll(".reveal");
+if (revealElements.length > 0 && "IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal--visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+  );
+  revealElements.forEach((el) => revealObserver.observe(el));
+} else {
+  revealElements.forEach((el) => el.classList.add("reveal--visible"));
+}
