@@ -102,8 +102,10 @@
           <div class="hero-card__dot hero-card__dot--2"></div>
           <div class="hero-card__dot hero-card__dot--3"></div>
           <div class="hero-card__icon">🧭</div>
-          <h2>How it works</h2>
-          <p>Browse by category. Open a card. Copy & paste. That's it.</p>
+          <div class="hero-card__content">
+            <h2>How it works</h2>
+            <p>Browse by category. Open a card. Copy & paste. That's it.</p>
+          </div>
           <div class="hero-card__meta">
             <span class="hero-card__badge">⚡ 100 prompts</span>
             <span class="hero-card__badge">📂 10 categories</span>
@@ -122,7 +124,7 @@
       </div>
       <div class="filter-controls">
         <input type="search" id="search" placeholder="Search prompts" aria-label="Search prompts" />
-        <select id="category" aria-label="Filter by category"></select>
+        <div id="category-filters" class="category-filters" role="group" aria-label="Filter by category"></div>
       </div>
     </section>
 
@@ -175,7 +177,9 @@
         </div>
       </div>
       <div class="modal__scroll">
-        <h4>Prompt</h4>
+        <div class="modal__prompt-label">
+          <h4>Prompt</h4>
+        </div>
         <pre id="modal-prompt"></pre>
       </div>
       <div class="modal__bottom">
