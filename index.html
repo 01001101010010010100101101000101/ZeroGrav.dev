@@ -82,11 +82,11 @@
     </nav>
     <section class="hero-content">
       <div>
-        <p class="eyebrow">Top 1% prompts for vibe coders</p>
-        <h1>Build fast, feel smooth, ship clean.</h1>
+        <p class="eyebrow">The prompt vault for vibe coders</p>
+        <h1>Prompt engineering, minus the engineering.</h1>
         <p class="lead">
-          100 expertly engineered prompts across real-world categories. Every card is designed for high-signal execution
-          and production-grade outcomes.
+          100 copy-ready prompts across 10 real-world categories — from planning to launch. Open a card, paste the
+          prompt, and get production-grade output on the first try.
         </p>
         <div class="hero-actions">
           <button class="primary-button" id="copy-all">Copy all prompts</button>
@@ -94,14 +94,21 @@
         </div>
 
       </div>
-      <div class="hero-card" aria-hidden="true">
-        <div class="hero-card__icon">🧭</div>
-        <h2>Start with clarity</h2>
-        <p>Pick a category, open a card, and copy a prompt that instantly levels up your vibe.</p>
-        <div class="hero-card__meta">
-          <span>100 prompts</span>
-          <span>10 categories</span>
-          <span>Zero fluff</span>
+      <div class="hero-card-wrapper" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-card__shimmer"></div>
+          <div class="hero-card__glow"></div>
+          <div class="hero-card__dot hero-card__dot--1"></div>
+          <div class="hero-card__dot hero-card__dot--2"></div>
+          <div class="hero-card__dot hero-card__dot--3"></div>
+          <div class="hero-card__icon">🧭</div>
+          <h2>How it works</h2>
+          <p>Browse by category. Open a card. Copy & paste. That's it.</p>
+          <div class="hero-card__meta">
+            <span class="hero-card__badge">⚡ 100 prompts</span>
+            <span class="hero-card__badge">📂 10 categories</span>
+            <span class="hero-card__badge">🎯 Zero fluff</span>
+          </div>
         </div>
       </div>
     </section>
@@ -124,9 +131,8 @@
 
   <section class="cta">
     <div>
-      <h2>Build with precision, then ship with confidence.</h2>
-      <p>Use the vault to go from idea to implementation-ready output with fewer rewrites and higher quality results.
-      </p>
+      <h2>Stop rewriting. Start shipping.</h2>
+      <p>Go from idea to implementation-ready output — fewer iterations, higher quality, every time.</p>
     </div>
     <a class="primary-button" href="#vault">Browse all prompts</a>
   </section>
@@ -147,35 +153,34 @@
 
   <footer class="footer">
     <span>© 2026 ZeroGrav.dev</span>
-    <span>Built for Codex, Antigravity, Gemini, Claude, OpenClaw, and more.</span>
+    <span>Works with Codex · Gemini · Claude · Antigravity · OpenClaw & more</span>
   </footer>
 
   <div class="modal" id="prompt-modal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal__overlay" data-close="true"></div>
     <div class="modal__content" role="document">
       <button class="modal__close" aria-label="Close" data-close="true">✕</button>
-      <div class="modal__header">
-        <span class="modal__icon" id="modal-icon"></span>
-        <div>
-          <p class="modal__category" id="modal-category"></p>
-          <h3 id="modal-title"></h3>
-          <p class="modal__summary" id="modal-summary"></p>
+      <div class="modal__top">
+        <div class="modal__header">
+          <span class="modal__icon" id="modal-icon"></span>
+          <div>
+            <p class="modal__category" id="modal-category"></p>
+            <h3 id="modal-title"></h3>
+          </div>
         </div>
-      </div>
-      <div class="modal__body">
-        <div>
+        <p class="modal__summary" id="modal-summary"></p>
+        <div class="modal__detail">
           <h4>Why this prompt works</h4>
           <p id="modal-details"></p>
         </div>
-        <div>
-          <h4>Prompt</h4>
-          <pre id="modal-prompt"></pre>
-          <button class="primary-button" id="copy-prompt">Copy prompt</button>
-        </div>
-        <div>
-          <h4>Quick tip</h4>
-          <p id="modal-tip"></p>
-        </div>
+      </div>
+      <div class="modal__scroll">
+        <h4>Prompt</h4>
+        <pre id="modal-prompt"></pre>
+      </div>
+      <div class="modal__bottom">
+        <button class="primary-button modal__copy" id="copy-prompt">Copy prompt</button>
+        <p class="modal__tip"><span>💡</span> <span id="modal-tip"></span></p>
       </div>
     </div>
   </div>
